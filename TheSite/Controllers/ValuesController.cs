@@ -9,6 +9,8 @@ namespace TheSite.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        // Port 57781
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -20,7 +22,7 @@ namespace TheSite.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return $"value sent is: {id}";
         }
 
         // POST api/values
